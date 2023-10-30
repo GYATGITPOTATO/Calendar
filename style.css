@@ -1,0 +1,140 @@
+table{
+    border: 5px solid black;
+            margin: 15px; 
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;                    
+}
+
+.calendar-container {
+            display: inline-block;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;         
+           background: #FF6AB591;
+           background-size: cover;
+            }
+            .calendar-container1 {
+            display: inline-block;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;         
+           background: #FFAA958E;
+           background-size: cover;
+            }
+            .calendar-container2 {
+            display: inline-block;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;         
+           background: #FFAA1C23;
+           background-size: cover;
+            }
+            .calendar-container3 {
+            display: inline-block;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;         
+           background: #FF900EAA;
+           background-size: cover;
+            }
+            
+            image-cell{
+            background-size: cover;
+        }
+        table td{
+            height: 35px;
+            width: 35px;
+            text-align: center;
+        }
+            
+   table th {
+            background-color: #FF380B80;
+            color: white;
+            font-weight: bold;
+            }
+td{
+    font-family: "Cursive";
+    
+}
+img{
+    height: 5px;
+    width: 5px;
+    
+}
+
+.date-cell{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-cell1{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.date-cell2{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.date-cell3{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.holiday-date-clicked {
+    animation: holidayclick 1s ease-in-out;
+}
+
+@keyframes holidayclick {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+.star-effect {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.star-effect::before {
+  content: '★';
+  position: absolute;
+  opacity: 0;
+  top: -15px;
+  left: 0;
+  transition: opacity 0.5s, transform 0.8s;
+  transform-origin: center;
+}
+
+.star-effect.active::before {
+  opacity: 1;
+  transform: translateY(0);
+}
